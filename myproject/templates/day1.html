@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/mycss.css') }}">
+</head>
+<body>
+    <h1>My first flask project</h1>
+    <h1>welcome {{ name }} {{ n }}</h1>
+
+
+    {% for i in range(1,11): %}
+
+    <h2>{{ i }} x {{ n }} = {{ i*n }}</h2>
+
+    {% endfor %}
+</body>
+</html>
